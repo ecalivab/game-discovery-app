@@ -1,5 +1,5 @@
 import "./App.css";
-import { Layout } from "./Components/HOC/Layout";
+import { Layout } from "./layouts/Layout";
 
 function App() {
   return (
