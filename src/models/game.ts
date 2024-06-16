@@ -11,6 +11,7 @@ export interface Game {
   parent_platforms: {
     platform: Platform;
   }[];
+  metactritic: number;
 }
 
 export interface FetchGamesResponse {
