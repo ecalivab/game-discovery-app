@@ -26,6 +26,7 @@ export const Layout = () => {
           <GridItem area={"aside"} paddingX={5}>
             <GenreList
               onSelectedGenre={(genre) => setSelectedGenre(genre)}
+              selectedGenre={selectedGenre}
             ></GenreList>
           </GridItem>
         </Show>
