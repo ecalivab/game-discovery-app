@@ -33,8 +33,10 @@ export const Layout = () => {
         <Show above="lg">
           <GridItem area={"aside"} paddingX={5}>
             <GenreList
-              onSelectedGenre={(genre) => setGameQuery({ ...gameQuery, genre })}
-              selectedGenre={gameQuery.genre}
+              onSelectedGenre={(genre) =>
+                setGameQuery({ ...gameQuery, genreId: genre.id })
+              }
+              selectedGenreId={gameQuery.genreId}
             ></GenreList>
           </GridItem>
         </Show>
@@ -47,9 +49,9 @@ export const Layout = () => {
             <HStack spacing={5} marginBottom={5}>
               <PlatformSelector
                 onSelectPlatform={(p) =>
-                  setGameQuery({ ...gameQuery, platform: p })
+                  setGameQuery({ ...gameQuery, platformId: p.id })
                 }
-                selectedPlatform={gameQuery.platform}
+                selectedPlatformId={gameQuery.platformId}
               />
               <SortSelector
                 sortOrder={gameQuery.sortOrder}

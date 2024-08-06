@@ -1,11 +1,11 @@
 import { SimpleGrid, Spinner, Text } from "@chakra-ui/react";
-import useGames from "../../hooks/useGames";
-import { GameCard } from "../GameCard/GameCard";
-import { GameCardSkeleton } from "../GameCard/GameCardSkeleton";
-import { GameCardContainer } from "../GameCard/GameCardContainer";
-import { GameQuery } from "../../models/gameQuery";
 import React from "react";
 import InfiniteScroll from "react-infinite-scroll-component";
+import useGames from "../../hooks/useGames";
+import { GameQuery } from "../../models/gameQuery";
+import { GameCard } from "../GameCard/GameCard";
+import { GameCardContainer } from "../GameCard/GameCardContainer";
+import { GameCardSkeleton } from "../GameCard/GameCardSkeleton";
 
 interface Props {
   gameQuery: GameQuery;
