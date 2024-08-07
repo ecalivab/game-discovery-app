@@ -1,6 +1,6 @@
 export interface GameQuery {
-  genreId: number | undefined;
-  platformId: number | undefined;
-  sortOrder: string;
-  searchText: string;
+  genreId?: number | undefined;
+  platformId?: number | undefined;
+  sortOrder?: string;
+  searchText?: string;
 }
