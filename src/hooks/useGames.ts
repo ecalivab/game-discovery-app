@@ -1,8 +1,8 @@
 import { useInfiniteQuery } from "@tanstack/react-query";
-import { Game } from "../models/game";
-import { GameQuery } from "../models/gameQuery";
+import { Game } from "../models/Game";
+import { GameQuery } from "../models/GameQuery";
 import APIClient from "../services/api-client";
-import { FetchResponse } from "../models/fetchResponse";
+import { FetchResponse } from "../models/FetchResponse";
 
 /*
 const useGames = (gameQuery: GameQuery | null) =>

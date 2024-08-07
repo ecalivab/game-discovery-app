@@ -1,5 +1,5 @@
 import { useQuery } from "@tanstack/react-query";
-import { Platform } from "../models/game";
+import { Platform } from "../models/Game";
 import APIClient from "../services/api-client";
 
 // const usePlatforms = () => useData<Platform>("platforms/lists/parents");

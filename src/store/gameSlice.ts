@@ -1,4 +1,4 @@
-import { GameQuery } from "../models/gameQuery";
+import { GameQuery } from "../models/GameQuery";
 import { StateCreator } from "zustand";
 
 export interface IGameSlice {

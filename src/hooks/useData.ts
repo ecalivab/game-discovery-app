@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import { axiosInstance } from "../services/api-client";
 import { AxiosRequestConfig, CanceledError } from "axios";
-import { FetchResponse } from "../models/fetchResponse";
+import { FetchResponse } from "../models/FetchResponse";
 
 const useData = <T>(
   endpoint: string,
