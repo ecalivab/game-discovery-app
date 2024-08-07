@@ -26,7 +26,7 @@ const useGames = (gameQuery: GameQuery | null) =>
   useInfiniteQuery<FetchResponse<Game>, Error>({
     queryKey: ["games", gameQuery],
     queryFn: ({ pageParam }) =>
-      apiClient.get({
+      apiClient.getAll({
         params: {
           genres: gameQuery?.genreId,
           platforms: gameQuery?.platformId,
