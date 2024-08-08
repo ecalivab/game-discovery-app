@@ -17,7 +17,7 @@ export const GameTrailer = ({ gameId }: Props) => {
   }
 
   return (
-    <Box height={"45%"} width={"70%"} pt={10}>
+    <Box>
       <video
         src={data?.results[0]?.data[480]}
         poster={data?.results[0]?.preview}
