@@ -19,7 +19,7 @@ export const GameCard = ({ game }: Props) => {
               <PlatformIconList
                 platforms={game.parent_platforms.map((p) => p.platform)}
               />
-              <CriticScore score={game.metactritic} />
+              <CriticScore score={game.metacritic} />
             </HStack>
             <Heading fontSize={"2xl"}>{game.name}</Heading>
           </CardBody>
