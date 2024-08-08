@@ -16,6 +16,9 @@ export const GameTrailer = ({ gameId }: Props) => {
     throw error;
   }
 
+  if (!data?.results[0]) {
+    return null;
+  }
   return (
     <Box>
       <video

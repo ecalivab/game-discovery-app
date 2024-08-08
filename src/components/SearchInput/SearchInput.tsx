@@ -20,7 +20,7 @@ const SearchInput = () => {
       }}
     >
       <InputGroup>
-        <InputLeftElement children={<BsSearch />} />
+        <InputLeftElement pt={2} children={<BsSearch />} />
         <Input
           size={"lg"}
           borderRadius={20}
