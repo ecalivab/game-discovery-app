@@ -4,6 +4,7 @@ import { Box, Heading, SimpleGrid, Spinner, Text } from "@chakra-ui/react";
 import { ExpandableText } from "../components/ExpandableText/ExpandableText";
 import { DefinitionItem } from "../components/DefinitionItem/DefinitionItem";
 import CriticScore from "../components/GameCard/CriticScore";
+import { GameTrailer } from "../components/GameTrailer/GameTrailer";
 
 export const GameDetailPage = () => {
   const { slug } = useParams();
@@ -44,6 +45,8 @@ export const GameDetailPage = () => {
           {game.publishers?.map((pub) => <Text key={pub.id}>{pub.name}</Text>)}
         </DefinitionItem>
       </SimpleGrid>
+
+      <GameTrailer gameId={game.id} />
     </>
   );
 };
